@@ -1,0 +1,35 @@
+import 'package:e_commerce_app/core/constants/app_color.dart';
+import 'package:e_commerce_app/core/helper/animation_loader.dart';
+import 'package:e_commerce_app/core/helper/helper_functions.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+class HkFullScreenLoader {
+  static void openLoadingDialog(String text, String animation) {
+    showDialog(
+      context: Get.overlayContext!,
+      barrierDismissible: false,
+      builder: (_) => PopScope(
+        canPop: false,
+        child: Container(
+          color: HkHelperFunctions.isDarkMode(Get.context!)
+              ? HkColors.dark
+              : HkColors.white,
+          width: double.infinity,
+          height: double.infinity,
+          child: Column(
+            children: [
+              const SizedBox(height: 250),
+
+              HkAnimationLoader(text: text, animation: animation),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  static stopLoading() {
+    Navigator.of(Get.overlayContext!).pop();
+  }
+}
