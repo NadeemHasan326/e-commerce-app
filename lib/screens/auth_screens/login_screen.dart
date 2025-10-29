@@ -25,6 +25,8 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              const SizedBox(height: 30),
+
               /// Logo , Title And Subtitle
               const HkLoginHeader(),
 
@@ -159,7 +161,7 @@ class HkLoginHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = HkHelperFunctions.isDarkMode(context);
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      // crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Image(
           height: 80,
@@ -175,6 +177,7 @@ class HkLoginHeader extends StatelessWidget {
         const SizedBox(height: HkSizes.sm),
         Text(
           HkTexts.loginSubTitle,
+          textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.bodyMedium,
         ),
       ],

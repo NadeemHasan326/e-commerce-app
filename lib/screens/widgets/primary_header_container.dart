@@ -1,0 +1,38 @@
+import 'package:e_commerce_app/core/constants/app_color.dart';
+import 'package:e_commerce_app/screens/widgets/circular_container.dart';
+import 'package:e_commerce_app/screens/widgets/curved_edges_widget.dart';
+import 'package:flutter/cupertino.dart';
+
+class HkPrimaryHeaderContainer extends StatelessWidget {
+  const HkPrimaryHeaderContainer({super.key, required this.child});
+  final Widget child;
+  @override
+  Widget build(BuildContext context) {
+    return HkCurvedEdgesWidget(
+      child: Container(
+        color: HkColors.primary,
+        padding: const EdgeInsets.all(0),
+        child: Stack(
+          children: [
+            /// Background Custom Shapes
+            Positioned(
+              top: -150,
+              right: -250,
+              child: HkCircularContainer(
+                backgroundColor: HkColors.textWhite.withOpacity(0.1),
+              ),
+            ),
+            Positioned(
+              top: 100,
+              right: -300,
+              child: HkCircularContainer(
+                backgroundColor: HkColors.textWhite.withOpacity(0.1),
+              ),
+            ),
+            child,
+          ],
+        ),
+      ),
+    );
+  }
+}
