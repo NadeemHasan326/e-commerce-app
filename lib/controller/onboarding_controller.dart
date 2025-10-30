@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/navigation_menu.dart';
 import 'package:e_commerce_app/screens/auth_screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -24,7 +25,8 @@ class OnBoardingController extends GetxController {
     if (currentIndex.value == 2) {
       GetStorage storage = GetStorage();
       storage.write('IsFirstTime', false);
-      Get.offAll(const LoginScreen());
+      // Get.offAll(const LoginScreen());
+      Get.offAll(const NavigationMenu());
     } else {
       currentIndex.value = currentIndex.value + 1;
       pageController.jumpToPage(currentIndex.value);

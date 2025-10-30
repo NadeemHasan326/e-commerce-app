@@ -148,7 +148,7 @@ class HkHomeAppBar extends StatelessWidget {
           }),
         ],
       ),
-      actions: const [HkCartCounterIcon(iconColor: HkColors.white)],
+      actions: [HkCartCounterIcon(iconColor: HkColors.white)],
     );
   }
 }

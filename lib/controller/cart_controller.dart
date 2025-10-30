@@ -6,6 +6,7 @@ import 'package:e_commerce_app/data/models/cart_item_model.dart';
 import 'package:e_commerce_app/data/models/product_model.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:http/http.dart';
 
 class CartController extends GetxController {
   static CartController get instance => Get.find();
@@ -21,7 +22,7 @@ class CartController extends GetxController {
   RxInt productQuantityInCart = 0.obs;
   RxList<CartItemModel> cartItems = <CartItemModel>[].obs;
 
-  final variationController = VariationController.instance;
+  final variationController = Get.put(VariationController());
 
   /// Add items in the cart
   void addToCart(ProductModel product) {
