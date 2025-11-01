@@ -7,7 +7,7 @@ import 'package:e_commerce_app/core/constants/text_strings.dart';
 import 'package:e_commerce_app/core/shimmer/grid_layout.dart';
 import 'package:e_commerce_app/core/shimmer/shimmer_effect.dart';
 import 'package:e_commerce_app/core/shimmer/vertical_product_shimmer.dart';
-import 'package:e_commerce_app/screens/widgets/all_products.dart';
+import 'package:e_commerce_app/screens/all_products_screen.dart';
 import 'package:e_commerce_app/screens/widgets/appbar.dart';
 import 'package:e_commerce_app/screens/widgets/cart_menu_icon.dart';
 import 'package:e_commerce_app/screens/widgets/home_categories.dart';
@@ -76,7 +76,7 @@ class HomeScreen extends StatelessWidget {
                     title: 'Popular Products',
                     showActionButton: true,
                     onPressed: () => Get.to(
-                      () => AllProducts(
+                      () => AllProductsScreen(
                         title: 'Popular Products',
                         //query: FirebaseFirestore.instance.collection("Products").where("IsFeatured",isEqualTo: true).limit(6),
                         futureMethod: controller.fetchAllFeaturedProducts(),

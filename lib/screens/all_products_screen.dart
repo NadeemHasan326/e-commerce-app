@@ -11,8 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-class AllProducts extends StatelessWidget {
-  const AllProducts({
+class AllProductsScreen extends StatelessWidget {
+  const AllProductsScreen({
     super.key,
     required this.title,
     this.query,

@@ -5,7 +5,7 @@ import 'package:e_commerce_app/core/helper/helper_functions.dart';
 import 'package:e_commerce_app/core/styles/shadows.dart';
 import 'package:e_commerce_app/core/utils/enums.dart';
 import 'package:e_commerce_app/data/models/product_model.dart';
-import 'package:e_commerce_app/screens/product_details.dart';
+import 'package:e_commerce_app/screens/product_details_screen.dart';
 import 'package:e_commerce_app/screens/widgets/add_to_cart_button.dart';
 import 'package:e_commerce_app/screens/widgets/brand_title_text_with_verify_icon.dart';
 import 'package:e_commerce_app/screens/widgets/favourite_icon.dart';

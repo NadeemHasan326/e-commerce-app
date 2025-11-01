@@ -4,7 +4,7 @@ import 'package:e_commerce_app/core/constants/size.dart';
 import 'package:e_commerce_app/core/shimmer/horizontal_product_shimmer.dart';
 import 'package:e_commerce_app/core/utils/cloud_helper_functions.dart';
 import 'package:e_commerce_app/data/models/category_model.dart';
-import 'package:e_commerce_app/screens/widgets/all_products.dart';
+import 'package:e_commerce_app/screens/all_products_screen.dart';
 import 'package:e_commerce_app/screens/widgets/appbar.dart';
 import 'package:e_commerce_app/screens/widgets/product_card_horizontal.dart';
 import 'package:e_commerce_app/screens/widgets/rounded_image.dart';
@@ -87,7 +87,7 @@ class SubCategoriesScreen extends StatelessWidget {
                                 title: subCategory.name,
                                 showActionButton: true,
                                 onPressed: () => Get.to(
-                                  () => AllProducts(
+                                  () => AllProductsScreen(
                                     title: subCategory.name,
                                     futureMethod: controller
                                         .getCategoryProducts(

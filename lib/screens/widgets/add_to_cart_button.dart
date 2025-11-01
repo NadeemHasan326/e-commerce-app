@@ -3,7 +3,7 @@ import 'package:e_commerce_app/core/constants/app_color.dart';
 import 'package:e_commerce_app/core/constants/size.dart';
 import 'package:e_commerce_app/core/utils/enums.dart';
 import 'package:e_commerce_app/data/models/product_model.dart';
-import 'package:e_commerce_app/screens/product_details.dart';
+import 'package:e_commerce_app/screens/product_details_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';

@@ -4,7 +4,7 @@ import 'package:e_commerce_app/core/shimmer/grid_layout.dart';
 import 'package:e_commerce_app/core/shimmer/vertical_product_shimmer.dart';
 import 'package:e_commerce_app/core/utils/cloud_helper_functions.dart';
 import 'package:e_commerce_app/data/models/category_model.dart';
-import 'package:e_commerce_app/screens/widgets/all_products.dart';
+import 'package:e_commerce_app/screens/all_products_screen.dart';
 import 'package:e_commerce_app/screens/widgets/category_brands.dart';
 import 'package:e_commerce_app/screens/widgets/product_card_vertical.dart';
 import 'package:e_commerce_app/screens/widgets/section_heading.dart';
@@ -52,7 +52,7 @@ class HkCategoryTab extends StatelessWidget {
                         title: 'You might like',
                         showActionButton: true,
                         onPressed: () => Get.to(
-                          () => AllProducts(
+                          () => AllProductsScreen(
                             title: category.name,
                             futureMethod: controller.getCategoryProducts(
                               categoryId: category.id,

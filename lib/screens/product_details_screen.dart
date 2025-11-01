@@ -1,7 +1,7 @@
 import 'package:e_commerce_app/core/constants/size.dart';
 import 'package:e_commerce_app/core/utils/enums.dart';
 import 'package:e_commerce_app/data/models/product_model.dart';
-import 'package:e_commerce_app/screens/profuct_reviews.dart';
+import 'package:e_commerce_app/screens/profuct_reviews_screen.dart';
 import 'package:e_commerce_app/screens/widgets/bottom_add_to_cart.dart';
 import 'package:e_commerce_app/screens/widgets/product_attributes.dart';
 import 'package:e_commerce_app/screens/widgets/product_details_image_slider.dart';
